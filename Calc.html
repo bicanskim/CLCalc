@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>
+            <h3>Map setup</h3>
+        </title>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div>
+        <h4>Chamber of interest:</h4>
+            <ul style="list-style: none;">
+            <li><input type="radio" name="chamberOfInterest" id="atria" value="Atria" checked onchange="calculate()"> Atria </li>
+            <li><input type="radio" name="chamberOfInterest" id="ventricle" value="Ventricle" onchange="calculate()"> Ventricle </li>
+            </ul>
+            <br>
+            
+            <label for="cl">CL: </label>
+            <input type="number" name="cl" id="clInput" required oninput="calculate()" min="1">
+            <!-- <input type="number" name="cl" id="clInput" required oninput="checkClField()">
+            <button value="Calculate" onclick="calculate()" id="calculate" disabled>Calculate</button> -->
+        </div>
+    <br>
+        <div id="result">            
+        <h4 id="resultPlaceholder">Please insert tachycardia cycle length (CL)</h4>
+            <table id="resultTable" style="text-align: left; display: none;">
+                <tr>
+                    <th>CL</th>
+                    <td id="cl"></td>
+                </tr>
+                <tr>
+                    <th>WOI</th>
+                    <td id="woi"></td>
+                </tr>
+                <tr>
+                    <th>CL filter</th>
+                    <td id="clFilter"></td>
+                </tr>
+                <tr>
+                    <th>LAT</th>
+                    <td id="lat"></td>
+                </tr>
+                <tr>
+                    <th>POS</th>
+                    <td id="pos"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
