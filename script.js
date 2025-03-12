@@ -24,11 +24,11 @@ function calculate() {
     }
     
     // Populate table
-    document.getElementById('cl').innerText = cl;
-    document.getElementById('woi').innerText = "-" + woi + " to +" + woi;
-    document.getElementById('clFilter').innerText = clLowerFilter + " to " + clUpperFilter;
-    document.getElementById('lat').innerText = lat;
-    document.getElementById('pos').innerText = pos;
+    document.getElementById('cl').innerText = cl + " ms";
+    document.getElementById('woi').innerText = "-" + woi + " ms" + " to +" + woi + " ms";
+    document.getElementById('clFilter').innerText = clLowerFilter + " ms" + " to " + clUpperFilter + " ms";
+    document.getElementById('lat').innerText = lat + " ms";
+    document.getElementById('pos').innerText = pos + " mm";
     
     if (document.getElementById('clInput').value.trim() > 0){
         document.getElementById('resultTable').style.display = "block";
